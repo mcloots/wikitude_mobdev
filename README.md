@@ -31,7 +31,7 @@ Sample projects for Android and iOS demoing the most common use-cases.
 * It is a known issue that when trying to generate a release Android apk in Flutter, the following error can happen:
 
     ```
-    AndroidRuntime: java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.wikitude.fluttersamples/base.apk"],nativeLibraryDirectories=[/data/app/com.wikitude.fluttersamples/lib/arm, /data/app/com.wikitude.fluttersamples/base.apk!/lib/armeabi-v7a, /vendor/lib, /system/lib]]] couldn't find "libflutter.so"
+    AndroidRuntime: java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/be.thomasmore.mobiledev/base.apk"],nativeLibraryDirectories=[/data/app/be.thomasmore.mobiledev/lib/arm, /data/app/be.thomasmore.mobiledev/base.apk!/lib/armeabi-v7a, /vendor/lib, /system/lib]]] couldn't find "libflutter.so"
     ```
 
     Because of that, if you build the application in release mode, you will have to put the following code inside `wikitude\_flutter_app/android/app/build.gradle` at the end of the `defaultConfig` section:

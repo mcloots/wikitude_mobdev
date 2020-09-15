@@ -1,4 +1,4 @@
-package com.wikitude.fluttersamples;
+package be.thomasmore.mobiledev;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
